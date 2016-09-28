@@ -31,5 +31,9 @@ bandApp.controller('GigController', function($scope, $http) {
 });
 
 bandApp.controller('MemberController', function($scope, $http, $routeParams, $location) {
-
+	$http.get("data/band.json").then(function (response) {
+		$scope.member = response.data.members[$routeParams.memberID];
+		$scope.title = $scope.member.name;
+		console.log($scope.member);
+	});
 });

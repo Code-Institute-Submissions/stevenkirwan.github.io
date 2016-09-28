@@ -42,36 +42,36 @@
 			"price": 20
 		}
 	],
-	"members":[
-		{
+	"members":{
+		"1":{
 			"id":"1",
 			"name":"David Kennedy",
 			"instrument": "Guitar",
 			"bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo debitis dicta perspiciatis, ut, accusamus architecto. Sequi ab assumenda, quisquam iure aut. Officiis rem recusandae quia commodi, sequi, nobis perspiciatis officia.",
 			"birthdate": "12/22/1986"
 		},
-		{
+		"2":{
 			"id":"2",
 			"name":"Aidan O' Halloran",
 			"instrument": "Drums",
 			"bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero totam reprehenderit enim assumenda. Dolorem, unde est laborum nihil sunt hic quo repellat in numquam accusamus aut molestiae blanditiis? Enim.",
 			"birthdate": "12/22/1986"
 		},
-		{
+		"3":{
 			"id":"3",
 			"name":"Aidan Williams",
 			"instrument": "Bass",
 			"bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt soluta non voluptatem. Numquam et voluptatem aperiam animi, in exercitationem nam, provident mollitia consectetur, doloribus, deserunt quo? Porro incidunt tempore quae?",
 			"birthdate": "12/22/1986"
 		},
-		{
+		"4":{
 			"id":"4",
 			"name":"Luke Peters",
 			"instrument": "Vocals/Guitar",
 			"bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum distinctio numquam, modi maiores dolorem ex qui necessitatibus odio incidunt sint tempore hic, tempora molestias ipsam impedit beatae. Ducimus, voluptate.",
 			"birthdate": "12/22/1986"
 		}
-	],
+	},
 	"bio":[
 		{
 			"band-image":"http://placehold.it/1200x400",

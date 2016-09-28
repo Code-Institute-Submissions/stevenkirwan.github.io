@@ -11,9 +11,9 @@ var runSequence = require('run-sequence');
 
 
 gulp.task('sass', function() {
-  return gulp.src('app/scss/styles.scss')
+  return gulp.src('scss/styles.scss')
     .pipe(sass())
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -28,7 +28,7 @@ gulp.task('browserSync', function() {
 })
 
 gulp.task('useref', function(){
-  return gulp.src('app/*.html')
+  return gulp.src('*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
@@ -36,7 +36,7 @@ gulp.task('useref', function(){
 });
 
 gulp.task('images', function(){
-  return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
+  return gulp.src('images/**/*.+(png|jpg|jpeg|gif|svg)')
   .pipe(cache(imagemin({
       interlaced: true
     })))
@@ -44,7 +44,7 @@ gulp.task('images', function(){
 });
 
 gulp.task('copy', function () {
-        return gulp.src(['app/views/**/*'], {
+        return gulp.src(['views/**/*'], {
             base: 'app'
         }).pipe(gulp.dest('dist'));
     });
@@ -54,9 +54,9 @@ gulp.task('clean:dist', function() {
 })
 
 gulp.task('watch', ['browserSync', 'sass'], function (){
-  gulp.watch('app/scss/**/*.scss', ['sass']); 
-  gulp.watch('app/*.html', browserSync.reload); 
-  gulp.watch('app/js/**/*.js', browserSync.reload); 
+  gulp.watch('scss/**/*.scss', ['sass']); 
+  gulp.watch('*.html', browserSync.reload); 
+  gulp.watch('js/**/*.js', browserSync.reload); 
 });
 
 gulp.task('build', function (callback) {

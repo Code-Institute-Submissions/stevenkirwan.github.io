@@ -1,4 +1,4 @@
-var bandApp = angular.module('bandApp', ['ngRoute', 'BandAppControllers']);
+var bandApp = angular.module('bandApp', ['ngRoute', 'BandAppControllers', 'ngMessages']);
 
 // Routing
 bandApp.config(function($routeProvider) {

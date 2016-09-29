@@ -359,5 +359,13 @@ footer {
     font-weight: bold;
     padding-top: 40px; }
 
+.error-message {
+  position: absolute;
+  left: -220px;
+  bottom: 10px;
+  padding: 0 20px;
+  background: #f0f0f0;
+  transition: 0.5s; }
+
 .music {
   margin: 60px 40px; }

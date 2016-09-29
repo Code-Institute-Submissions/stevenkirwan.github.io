@@ -6,21 +6,48 @@
 	</div>
 
 	<div class="col-md-9">
-		<form action="" name="">
+		<form name="contactForm" novalidate>
 			<div class="row">
 				<div class="col-md-6">
 					<label for="name">Name</label>
-					<input type="text" name="name" placeholder="Name">
+					<input 
+					type="text"  
+					name="name" 
+			        ng-model="client.name" 
+			        ng-minlength="3" 
+			        ng-maxlength="20"
+					placeholder="Name" 
+			        required>
+				    <div class="error-message" ng-messages="contactForm.name.$error" ng-show="contactForm.name.$touched">
+    					<p ng-message="minlength">Your name is too short.</p>
+    					<p ng-message="maxlength">Your name is too long.</p>
+    					<p ng-message="required">Your name is required.</p>
+					</div>
 				</div>
 				<div class="col-md-6">
 					<label for="phone">Phone Number</label>
-					<input type="number" name="number" placeholder="Phone Number">
+					<input 
+					type="number" 
+					name="number"
+					ng-model="client.number"
+					placeholder="Phone Number"
+					required>
+					<div class="error-message" ng-messages="contactForm.number.$error" ng-show="contactForm.number.$touched">
+    					<p ng-message="required">Your number is required.</p>
+					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6">
 					<label for="email">Email</label>
-					<input type="email" name="email" placeholder="Email">
+					<input 
+					type="email" 
+					name="email" 
+					ng-model="client.email"
+                	ng-minlength="5"
+                	ng-maxlength="20"
+					placeholder="Email"
+					required>
 				</div>
 				<div class="col-md-6">
 					<label for="location">Location</label>

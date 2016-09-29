@@ -1,4 +1,4 @@
-header{
+.home-header{
 	background:url('../images/band-2.jpg');
 	height:100vh;
 	background-size:cover;
@@ -20,4 +20,22 @@ header{
 			}
 		}
 	}
+}
+
+.inner-header{
+	background:url('../images/inner-bg.jpg');
+	  .nav {
+    	display:block;
+    	flex-direction: column;
+	  }
+
+	  .logo {
+	    order: 0;
+	    text-align: center;
+	    width: 150px;
+	    margin-right: auto;
+	    @include padding(0px);
+	  }
+	  
+
 }

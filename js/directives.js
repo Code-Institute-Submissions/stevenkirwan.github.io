@@ -6,6 +6,14 @@ bandApp.directive('header', function () {
     }
 });
 
+bandApp.directive('innerNav', function () {
+    return {
+        restrict: 'A',
+        replace: true,
+        templateUrl: "views/header-inner.html"
+    }
+});
+
 bandApp.directive('footer', function () {
     return {
         restrict: 'A',

@@ -1,4 +1,12 @@
-<div class="container">
-	<h2>{{ title }}</h2>
- +	<img src="images/{{ member.id }}.jpg" alt="{{ member.name }}" width="316" height="362">
+<div inner-nav></div>
+<div class="container-fluid">
+	<div class="col-md-12">
+		<h2>{{ title }} <span>{{ member.instrument }}</span></h2>
+	</div>
+	<div class="col-md-4">
+    	<img src="images/{{ member.id }}.jpg" alt="{{ member.name }}">
+    </div>
+    <div class="col-md-8">
+		<p>{{ member.bio }}</p>
+    </div>
 </div>

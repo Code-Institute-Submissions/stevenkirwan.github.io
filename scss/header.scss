@@ -20,6 +20,14 @@
 			}
 		}
 	}
+	@media all and (max-width: 600px) {
+		.cta{
+			@include padding(20px);
+				h1{
+					font-size: em(30px);
+				}
+			}
+	}
 }
 
 .inner-header{

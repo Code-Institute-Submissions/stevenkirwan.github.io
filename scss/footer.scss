@@ -16,13 +16,6 @@ footer{
 		.social{
 		position:absolute;
 		right:0;
-			li{
-				display:inline-block;
-				@include padding(null 10px null null);
-				a{
-					color:$white;
-				}
-			}
 		}
 	}
 }

@@ -26,17 +26,34 @@ input, textarea{
 	font-family:$oswald;
 }
 
+textarea{
+    height:200px;
+}
+
 input[type="submit"]{
 	background:$black;
 	border: 1px solid $black;
 	color:$white;
 	font-weight:bold;
+	@include margin(30px null null null);
+}
+
+input[type="submit"]:disabled{
+	opacity: 0.6;
 }
 
 label{
 	display:block;
 	font-family:$oswald;
-	@include padding(null null 10px null);
+	@include padding(10px null 10px null);
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+	border:1px solid #a94442;
+}
+
+input.ng-valid, textarea.ng-valid{
+	border:1px solid green;
 }
 
 strong{
@@ -90,5 +107,24 @@ strong{
 	color:$black;
 	&:hover{
 		color:$black;
+	}
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  @include margin(40px null 40px null);
+
+}
+
+.social{
+	li{
+		display:inline-block;
+		@include padding(null 10px null null);
+		a{
+			color:$white;
+		}
 	}
 }

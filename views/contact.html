@@ -1,73 +1,120 @@
 <div inner-nav></div>
 <section class="container">
 
-	<div class="col-md-12">
+	<div class="row">
 		<h2>{{ title }}</h2>
 	</div>
 
-	<div class="col-md-9">
-		<form name="contactForm" novalidate>
-			<div class="row">
-				<div class="col-md-6">
-					<label for="name">Name</label>
-					<input 
-					type="text"  
-					name="name" 
-			        ng-model="client.name" 
-			        ng-minlength="3" 
-			        ng-maxlength="20"
-					placeholder="Name" 
-			        required>
-				    <div class="error-message" ng-messages="contactForm.name.$error" ng-show="contactForm.name.$touched">
-    					<p ng-message="minlength">Your name is too short.</p>
-    					<p ng-message="maxlength">Your name is too long.</p>
-    					<p ng-message="required">Your name is required.</p>
+	<div class="row row-eq-height">
+		<div class="col-md-9 contact-form">
+			
+			<form name="contactForm" novalidate>
+				<div class="row">
+					<div class="col-md-6">
+						<label for="name">Name</label>
+						<input 
+						type="text"  
+						name="name" 
+				        ng-model="client.name" 
+				        ng-minlength="3" 
+				        ng-maxlength="20"
+						placeholder="Name" 
+				        required>
+					    <div class="error-message" ng-messages="contactForm.name.$error" ng-show="contactForm.name.$touched">
+	    					<p ng-message="minlength">Your name is too short.</p>
+	    					<p ng-message="maxlength">Your name is too long.</p>
+	    					<p ng-message="required">Your name is required.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<label for="phone">Phone Number</label>
+						<input 
+						type="number" 
+						name="number"
+						ng-model="client.number"
+				        ng-minlength="10" 
+				        ng-maxlength="10"
+						placeholder="Phone Number"
+						required>
+						<div class="error-message" ng-messages="contactForm.number.$error" ng-show="contactForm.number.$touched">
+	    					<p ng-message="required">Your number is required.</p>
+	    					<p ng-message="maxlength">Your name is too long.</p>
+	    					<p ng-message="minlength">Your name is too short.</p>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<label for="phone">Phone Number</label>
-					<input 
-					type="number" 
-					name="number"
-					ng-model="client.number"
-					placeholder="Phone Number"
-					required>
-					<div class="error-message" ng-messages="contactForm.number.$error" ng-show="contactForm.number.$touched">
-    					<p ng-message="required">Your number is required.</p>
+				<div class="row">
+					<div class="col-md-6">
+						<label for="email">Email</label>
+						<input 
+						type="email" 
+						name="email" 
+						ng-model="client.email"
+	                	ng-minlength="5"
+	                	ng-maxlength="20"
+						placeholder="Email"
+						required ng-class="{'has-error': contactForm.email.$invalid}">
+						<div class="error-message" ng-messages="contactForm.email.$error" ng-show="contactForm.email.$touched">
+							<p ng-message="required">Your email is required.</p>
+	    					<p ng-message="email">Your email address is invalid</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<label for="location">Location</label>
+						<input 
+						type="text" 
+						name="location" 
+						ng-model="client.location" 
+						placeholder="Location" 
+						required>
+						<div class="error-message" ng-messages="contactForm.location.$error" ng-show="contactForm.location.$touched">
+							<p ng-message="required">Your location is required.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<label for="email">Email</label>
-					<input 
-					type="email" 
-					name="email" 
-					ng-model="client.email"
-                	ng-minlength="5"
-                	ng-maxlength="20"
-					placeholder="Email"
-					required>
+				<div class="row">
+					<div class="col-md-12">
+						<label for="message">Message</label>
+						<textarea 
+						name="message" 
+						ng-model="client.message" 
+						ng-minlength="40" 
+						ng-maxlength="1000"
+						placeholder="Message"
+						required></textarea>
+						<div class="error-message" ng-messages="contactForm.message.$error" ng-show="contactForm.message.$touched">
+							<div ng-message="required">This field is required</div>
+	  						<div ng-message="minlength">Message must be over 40 characters</div>
+	  						<div ng-message="maxlength">Message must not exceed 1000 characters</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-6">
-					<label for="location">Location</label>
-					<input type="text" name="location" placeholder="Location">
+				<div class="row">
+					<div class="col-md-2">
+						<input type="submit" ng-disabled="contactForm.$invalid" value="Send it">
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<label for="message">Message</label>
-					<textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-2">
-					<input type="submit" value="Send it">
-				</div>
-			</div>
-		</form>
-	</div>
-	<div class="col-md-3">
-		<h4>Contact</h4>
+			</form>
+		</div>
+		
+		<div class="col-md-3 contact-details">
+			<aside class="contact-details">
+				<h4>Contact</h4>
+				<h5>Address</h5>
+				<p>123 Fake St, <br/>Dublin,<br/> Ireland</p>
+				<h5>Phone</h5>
+				<p>0872654897</p>
+				<h5>Website</h5>
+				<p><a href="#">www.theband.com</a></p>
+				<h5>Email</h5>
+				<p><a href="mailto:info@theband.com" target="_top">info@theband.com</p>
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				</ul>
+			</aside>
+		</div>
 	</div>
 </section>

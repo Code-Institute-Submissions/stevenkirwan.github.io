@@ -3,6 +3,7 @@ nav {
   display: flex; 
   justify-content: center;
 }
+
 .logo {
   order: 1;
   @include padding(24px);
@@ -41,5 +42,20 @@ nav {
   
   .item {
     text-align: center;
+  }
+}
+
+@media all and (max-width: 600px) {
+  nav {
+    display: block;
+  }
+
+  .logo {
+    width: 200px;
+    margin:0 auto; 
+  }
+
+  .item {
+    padding:10px;
   }
 }

@@ -15,8 +15,17 @@
 			</div>
 			<div class="col-md-2">
 				<h4>Newsletter</h4>
-				<form action="#" name="newsletter">
-					<input type="email" placeholder="Sign up to newsletter">
+				<form name="newsletter" novalidate>
+					<input 
+					type="email" 
+					name="email" 
+					ng-model="signup.email"
+					required 
+					ng-class="{'has-error': newsletter.email.$invalid}"
+					placeholder="Sign up to newsletter">
+				    <div class="error-message" ng-messages="newsletter.email.$error" ng-show="newsletter.email.$touched">
+    					<p ng-message="email">Your email is required.</p>
+					</div>
 					<input type="submit">
 				</form>
 			</div>

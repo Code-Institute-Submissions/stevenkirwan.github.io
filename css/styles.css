@@ -108,7 +108,8 @@ a:hover {
   text-decoration: none; }
 
 body {
-  background: #dcdcdc; }
+  background: #dcdcdc;
+  background-image: url("../images/inner-body-bg.jpg"); }
 
 img {
   display: block;
@@ -312,6 +313,10 @@ footer {
       position: absolute;
       right: 0; }
 
+.inner {
+  background: #f5f5f5;
+  padding: 40px 30px; }
+
 .intro {
   background: #f5f5f5;
   float: left;
@@ -358,7 +363,6 @@ footer {
   background: #262626;
   color: #f5f5f5;
   float: left;
-  margin-top: 35px;
   padding: 60px 40px; }
 
 .gigs {
@@ -374,10 +378,6 @@ footer {
     .gigs ul li .date {
       font-size: 2em;
       line-height: 1.625em; }
-
-.band-page .about {
-  padding-top: 80px;
-  padding-bottom: 10px; }
 
 .gig-item {
   background: #f5f5f5;
@@ -396,8 +396,13 @@ footer {
     font-weight: bold;
     padding-top: 40px; }
 
+.form-wrapper {
+  box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.2); }
+
 .contact-form {
-  background: #f5f5f5;
+  background: #ffffff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   padding: 20px 30px; }
   .contact-form .error-message {
     bottom: -30px;
@@ -407,6 +412,9 @@ footer {
 
 .contact-details {
   background: #262626;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 30px 30px 20px 20px;
   color: #f5f5f5; }
   .contact-details h4 {
     color: #f5f5f5; }
@@ -421,6 +429,3 @@ footer {
       text-decoration: none; }
   .contact-details .social {
     margin-top: 40px; }
-
-.music {
-  margin: 60px 40px; }

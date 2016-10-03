@@ -1,5 +1,11 @@
+.form-wrapper{
+	box-shadow: 0 0.125rem 0.313rem rgba( 0, 0, 0, .2 );
+}
+
 .contact-form{
-	background:$white;
+	background:#ffffff;
+	border-top-left-radius: 5px; 
+	border-bottom-left-radius: 5px; 
 	@include padding(20px 30px 20px 30px);
 		.error-message{
 			bottom:-30px;
@@ -11,6 +17,9 @@
 
 .contact-details{
 	background:$black;
+	border-top-right-radius: 5px; 
+	border-bottom-right-radius: 5px; 
+	@include padding(30px 30px 20px 20px);
 	color:$white;
 	h4{
 		color:$white;

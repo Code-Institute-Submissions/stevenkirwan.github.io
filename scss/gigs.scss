@@ -1,13 +1,29 @@
 .gig-item{
 	background:$white;
+	border:1px solid $black;
 	margin-bottom:20px;
 	float:left;
 	width:100%;
 	height:100px;
+	@media screen and (max-width: 767px) {
+		height:auto;
+	}
+	@include transition(all 0.5s ease-out);
+	&:hover{
+	 box-shadow: 0 0.125rem 0.313rem rgba( 0, 0, 0, .2 );
+	}
 	.date{
 		background:$black;
 		height:100px;
 		color:$white;
+		font-family:$oswald;
+		line-height:100px;
+		text-align:center;
+		font-weight:bold;
+		font-size:20px;
+		@media screen and (max-width: 767px) {
+			height:auto;
+		}
 	}
 	.meta{
 		padding:40px;
@@ -17,4 +33,34 @@
 		font-weight:bold;
 		padding-top:40px;
 	}
+	.btn{
+		width:100%;
+		text-align:center;
+		padding: 15px;
+		@media screen and (max-width: 767px) {
+			width:auto;
+			padding: 15px 60px;
+			margin-bottom:20px;
+			float:right;
+		}
+		span{
+			@media screen and (max-width: 992px) {
+				display: none;
+			}
+		}
+	}
+}
+
+input.ng-valid{
+	border:1px solid $black;
+}
+
+.no-gigs{
+	@include padding(40px);
+	background:#ffffff;
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	font-size:26px;
+	line-height:32px;
 }

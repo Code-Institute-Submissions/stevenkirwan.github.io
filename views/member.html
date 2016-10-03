@@ -1,12 +1,14 @@
 <div inner-nav></div>
-<div class="container">
+<div class="container inner">
 	<div class="col-md-12">
-		<h2>{{ title }} <span>{{ member.instrument }}</span></h2>
+		<h2>{{ title }}</h2>
 	</div>
 	<div class="col-md-4">
     	<img src="images/{{ member.id }}.jpg" alt="{{ member.name }}">
     </div>
     <div class="col-md-8">
+    	<p><strong>Instrument: </strong>{{ member.instrument }}</p>
+    	<p><strong>Birthday: </strong>{{ member.birthdate | date }}</p>
 		<p>{{ member.bio }}</p>
     </div>
 </div>

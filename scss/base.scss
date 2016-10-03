@@ -112,12 +112,14 @@ strong{
 }
 
 .row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-  @include margin(40px null 40px null);
-
+  	display:-webkit-box;
+  	display:-webkit-flex;
+  	display:-ms-flexbox;
+  	display:flex;
+    @include margin(40px null 40px null);
+	@media screen and (max-width: 992px) {
+		display:block;
+	}
 }
 
 .social{

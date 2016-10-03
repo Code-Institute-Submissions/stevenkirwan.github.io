@@ -1,21 +1,25 @@
 <div inner-nav></div>
 <div class="container inner">
 	<h2>{{ title }}</h2>
-	<div ng-repeat="gig in siteContent.gigs">
+	Search By Location
+	<input type="text" ng-model="location">
+	<div ng-repeat="gig in filteredData = (siteContent.gigs | filter:location)">
+
 		<div class="gig-item">
-			<div class="date col-md-1">
+			<div class="date col-md-2 col-sm-2">
 				{{ gig.date | date:'mediumDate' }}
 			</div>
-			<div class="meta col-md-6">
+			<div class="meta col-md-5 col-sm-5 col-xs-8">
 				{{ gig.address }}
 				{{ gig.venue }}
 			</div>
-			<div class="price col-md-3">
+			<div class="price col-md-3 col-sm-3 col-xs-4">
 				{{ gig.price | currency:'€'}}
 			</div>
-			<div class="ticket col-md-2">
-				<a href="{{ gig.ticket }}" class="btn">Buy Ticket</a>
+			<div class="ticket col-md-2 col-sm-2">
+				<a href="{{ gig.ticket }}" class="btn">Buy <span>Ticket</span></a>
 			</div>
 		</div>
 	</div>
+	<div class="col-md-12 no-gigs" ng-show="filteredData.length==0">No upcoming gigs in your area <br/>Check back soon for updated gig info</p>
 </div>

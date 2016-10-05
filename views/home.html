@@ -25,7 +25,7 @@
 	<section>
 		<div class="row"><div class="col-md-12"><h3>Upcoming Shows</h3></div></div>
 		<div class="gigs">
-			<ul ng-repeat="gig in siteContent.gigs">
+			<ul ng-repeat="gig in siteContent.gigs | limitTo:4">
 				<li>
 					<div class="date">
 						{{ gig.date | date:'mediumDate' }}

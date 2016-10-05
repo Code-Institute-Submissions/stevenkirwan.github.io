@@ -18,7 +18,7 @@
 			"venue": "On The Rox",
 			"date": "22/12/2016",
 			"ticket":"http://www.ticketmaster.ie/",
-			"price": 20
+			"price": 10
 		},
 		{
 			"address": "Cork, Ireland",
@@ -30,14 +30,49 @@
 		{
 			"address": "Dublin, Ireland",
 			"venue": "The Pint",
-			"date": "27/04/2017",
+			"date": "15/01/2017",
+			"ticket":"http://www.ticketmaster.ie/",
+			"price": 18
+		},
+		{
+			"address": "Dublin, Ireland",
+			"venue": "Fibber Magees",
+			"date": "02/04/2017",
+			"ticket":"http://www.ticketmaster.ie/",
+			"price": 20
+		},
+		{
+			"address": "Cork, Ireland",
+			"venue": "An Crúiscín Lán",
+			"date": "21/05/2017",
+			"ticket":"http://www.ticketmaster.ie/",
+			"price": 20
+		},
+		{
+			"address": "Dublin, Ireland",
+			"venue": "On The Rox",
+			"date": "19/06/2016",
 			"ticket":"http://www.ticketmaster.ie/",
 			"price": 20
 		},
 		{
 			"address": "Dublin, Ireland",
 			"venue": "Fibber Magees",
-			"date": "02/11/2017",
+			"date": "14/08/2017",
+			"ticket":"http://www.ticketmaster.ie/",
+			"price": 22
+		},
+		{
+			"address": "Cork, Ireland",
+			"venue": "An Crúiscín Lán",
+			"date": "17/08/2017",
+			"ticket":"http://www.ticketmaster.ie/",
+			"price": 25
+		},
+		{
+			"address": "Dublin, Ireland",
+			"venue": "On The Rox",
+			"date": "22/12/2017",
 			"ticket":"http://www.ticketmaster.ie/",
 			"price": 20
 		}

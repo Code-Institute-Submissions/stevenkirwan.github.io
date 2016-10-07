@@ -23,13 +23,13 @@ h2, h3, h4, h5, h6{
 	position: relative;
 	@include margin(null null 30px null);
 	&:before{
+	    background-color: $black;
+	    bottom: -10px;
         content: '';
 	    height: 3px;
-	    background-color: $black;
-	    width: 60px;
-	    position: absolute;
 	    left: 0;
-	    bottom: -10px;
+	    position: absolute;
+	    width: 60px;
 	}
 }
 

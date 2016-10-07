@@ -14,8 +14,8 @@ footer{
 		background: $black;
 		@include padding(20px null 20px null);
 		.social{
-		position:absolute;
-		right:0;
+			position:absolute;
+			right:0;
 		}
 	}
 }

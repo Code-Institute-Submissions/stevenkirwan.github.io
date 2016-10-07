@@ -12,7 +12,9 @@ var runSequence = require('run-sequence');
 
 gulp.task('sass', function() {
   return gulp.src('scss/styles.scss')
-    .pipe(sass())
+    .pipe(sass({
+        outputStyle: 'expanded'
+      }))
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
       stream: true

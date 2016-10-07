@@ -9,8 +9,8 @@
 	@include padding(60px 0px 60px 0px);
 	figure{
 		box-shadow: 0 0.125rem 0.313rem rgba( 0, 0, 0, .2 );
-		@include transition(all 0.5s ease-out);
 		position:relative;
+		@include transition(all 0.5s ease-out);
 		&:hover{
 			box-shadow: 0 0.125rem 0.313rem rgba( 0, 0, 0, .4 );
 		}
@@ -26,13 +26,13 @@
 			@include margin(null null 10px null);
 			@include padding(20px 20px 30px 20px);
 				&:before{
+			    background-color: $black;
+			    bottom: 25px;
 		        content: '';
 			    height: 1px;
-			    background-color: $black;
-			    width: 30px;
-			    position: absolute;
 			    left: 20px;
-			    bottom: 25px;
+			    position: absolute;
+			    width: 30px;
 			}
 			span{
 				display:block;
@@ -53,9 +53,9 @@
 
 .gigs{
 	background:$black;
+	color:$white;
 	float:left;
 	width:100%;
-	color:$white;
 	@include margin(null null 80px null);
 	@include padding(45px 40px 60px 40px);
 	ul{

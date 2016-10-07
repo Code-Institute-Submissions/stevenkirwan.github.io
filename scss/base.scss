@@ -1,6 +1,6 @@
 body{
 	background:$light-grey;
-	background-image:url('../images/inner-body-bg.jpg');
+	// background-image:url('../images/inner-body-bg.jpg');
 }
 
 img{
@@ -18,13 +18,13 @@ input, textarea{
     border-radius: 0;
 	color:$black;
 	display:block;
+	font-family:$oswald;
 	font-size: em(16);
     font-weight: 300;
     @include margin(null null 15px null);
     outline: 0 none;
     @include padding(12px);
 	width:100%;
-	font-family:$oswald;
 }
 
 textarea{

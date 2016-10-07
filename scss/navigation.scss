@@ -1,7 +1,7 @@
 nav {
-  align-items: center;
-  display: flex; 
-  justify-content: center;
+  @include align-items(center);
+  @include display(flex);
+  @include justify-content(center);
 }
 
 .logo {
@@ -51,8 +51,8 @@ nav {
   }
 
   .logo {
-    width: 200px;
     margin:0 auto; 
+    width: 200px;
   }
 
   .item {

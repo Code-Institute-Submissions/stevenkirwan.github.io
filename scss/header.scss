@@ -1,8 +1,8 @@
 .home-header{
 	background:url('../images/band-2.jpg');
-	height:100vh;
-	background-size:cover;
 	background-repeat:no-repeat;
+	background-size:cover;
+	height:100vh;
 	text-align:center;
 	.cta{
 		@include padding(5% 20% 35px 20%);
@@ -23,27 +23,24 @@
 	@media all and (max-width: 600px) {
 		.cta{
 			@include padding(20px);
-				h1{
-					font-size: em(30px);
-				}
+			h1{
+				font-size: em(30px);
 			}
+		}
 	}
 }
 
 .inner-header{
 	background:url('../images/inner-bg.jpg');
-	  .nav {
-    	display:block;
-    	flex-direction: column;
-	  }
-
-	  .logo {
-	    order: 0;
-	    text-align: center;
-	    width: 150px;
-	    margin-right: auto;
-	    @include padding(0px);
-	  }
-	  
-
+	.nav {
+		display:block;
+		flex-direction: column;
+	}
+	.logo {
+		margin-right: auto;
+		order: 0;
+		@include padding(0px);
+		text-align: center;
+		width: 150px;
+	}
 }

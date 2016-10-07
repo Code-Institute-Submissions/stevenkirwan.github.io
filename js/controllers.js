@@ -1,7 +1,7 @@
 var bandApp = angular.module('BandAppControllers', [])
 
 bandApp.controller('HomeController', function($scope, $http) {
-	$http.get("data/band.json").then(function (response) {
+    $http.get("data/band.json").then(function (response) {
 		$scope.siteContent = response.data;
 	});
 });

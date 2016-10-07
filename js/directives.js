@@ -17,6 +17,7 @@ bandApp.directive('innerNav', function () {
 bandApp.directive('footer', function () {
     return {
         restrict: 'A',
+        controller: 'HomeController',
         replace: true,
         templateUrl: "views/footer.html"
     }

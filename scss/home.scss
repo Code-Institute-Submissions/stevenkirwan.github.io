@@ -44,11 +44,16 @@
 	}
 }
 
+.music{
+	@include margin(0px 0px 60px 0px);
+}
+
 .book{
 	background:$black;
 	color:$white;
 	float:left;
 	@include padding(60px 40px 60px 40px);
+	width:100%;
 }
 
 .gigs{

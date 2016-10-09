@@ -27,8 +27,11 @@
 					<input type="submit">
 				</form>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 instagram">
 				<h4>Instagram</h4>
+				<ul>
+					<li ng-repeat="images in siteContent.instagram"><a href="#"><img src="{{ images }}" alt=""></a></li>
+				</ul>
 			</div>
 		</div>
 	</section>

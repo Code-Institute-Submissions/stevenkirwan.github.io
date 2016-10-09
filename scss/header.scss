@@ -21,6 +21,8 @@
 		}
 	}
 	@media all and (max-width: 600px) {
+		background-size:auto;
+		height:auto;
 		.cta{
 			@include padding(20px);
 			h1{

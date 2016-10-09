@@ -46,6 +46,9 @@
 
 .music{
 	@include margin(0px 0px 60px 0px);
+	video{
+		height:500px;
+	}
 }
 
 .book{
@@ -67,6 +70,13 @@
 		li{
 			float:left;
 			width:25%;
+			@media all and (max-width: 1024px) {
+				width:50%;
+			}
+			@media all and (max-width: 600px) {
+				width:100%;
+				text-align:center;
+			}
 			.date{
 				font-size: em(32);
 				line-height: em(26);

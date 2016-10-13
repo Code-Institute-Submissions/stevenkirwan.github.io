@@ -5,7 +5,11 @@
 	height:100vh;
 	text-align:center;
 	.cta{
-		@include padding(5% 20% 35px 20%);
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translateX(-50%) translateY(-50%);
+		@include padding(null 20% null 20%);
 		h1{
 			color:$white;
 			text-shadow: 0 0.125rem 0.313rem rgba( 0, 0, 0, .8 );

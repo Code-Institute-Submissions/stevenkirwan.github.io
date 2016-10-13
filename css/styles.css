@@ -281,7 +281,12 @@ strong {
 }
 
 .home-header .cta {
-  padding: 5% 20% 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding-right: 20%;
+  padding-left: 20%;
 }
 
 .home-header .cta h1 {

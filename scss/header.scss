@@ -4,15 +4,47 @@
 	background-size:cover;
 	height:100vh;
 	text-align:center;
+	@media all and (max-width: 992px) {
+		background-size:auto;
+		height:60vh;
+	}
+	@media all and (max-width: 600px) {
+		height:80vh;
+	}
+	@media all and (max-width: 400px) {
+		height:100vh;
+	}
+	@media all and (max-width: 320px) {
+		height:auto;
+		@include padding(null null 30px null);
+	}
 	.cta{
 	    position: absolute;
 	    top: 50%;
 	    left: 50%;
 	    transform: translateX(-50%) translateY(-50%);
 		@include padding(null 20% null 20%);
+		@media all and (max-width: 1280px) {
+			@include padding(10% 20% null 20%);
+		}
+		@media all and (max-width: 992px) {
+			position: static;
+			@include padding(0px 10px null 10px);
+			text-align:center;
+			transform: translateX(0%) translateY(0%);
+		}
+		@media all and (max-width: 600px) {
+			@include padding(20px 10px null 10px);
+		}
 		h1{
 			color:$white;
 			text-shadow: 0 0.125rem 0.313rem rgba( 0, 0, 0, .8 );
+			@media all and (max-width: 992px) {
+				font-size: em(30px);
+			}
+			@media all and (max-width: 600px) {
+				font-size: em(22px);
+			}
 		}
 		.btn{
 			background:$black;
@@ -21,16 +53,6 @@
 			&:hover{
 				background:rgba( 0, 0, 0, .2 );
 				border:2px solid $white;
-			}
-		}
-	}
-	@media all and (max-width: 600px) {
-		background-size:auto;
-		height:auto;
-		.cta{
-			@include padding(20px);
-			h1{
-				font-size: em(30px);
 			}
 		}
 	}

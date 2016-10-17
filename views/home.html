@@ -12,7 +12,7 @@
 
 	<section class="band row">
 		<div class="col-md-12"><h3>Band Members</h3></div>
-		<div class="col-md-3" ng-repeat="member in siteContent.members">
+		<div class="col-md-3 col-sm-6" ng-repeat="member in siteContent.members">
 			<a ng-href="/#/member/{{member.id}}">
 				<figure>
 					<img src="images/{{ member.id }}.jpg" alt="{{ member.name }}">
@@ -45,13 +45,13 @@
 			<div class="col-md-6">
 				<iframe width="100%" height="500" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/5747648&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
-			<div class="col-md-6">
-				<div data-toggle="modal" data-target="#myModal">launch video</div>
+			<div class="col-md-6 video">
+				<img src="images/video.jpg" data-toggle="modal" data-target="#myModal">
 
 				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				  <div class="modal-dialog" role="document">
 				    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				   	<video width="100%" controls poster="images/1.jpg">
+				   	<video width="100%" controls autoplay>
 						<source src="data/devour-the-earth.mp4" type="video/mp4">
 					</video>
 				  </div>

@@ -27,6 +27,9 @@
 	}
 	.meta{
 		padding:40px;
+		@media screen and (max-width: 767px) {
+			@include padding(40px 20px 40px 20px);
+		}
 	}
 	.price{
 		font-size: em(26);
@@ -42,6 +45,9 @@
 			padding: 15px 60px;
 			margin-bottom:20px;
 			width:auto;
+		}
+		@media screen and (max-width: 400px) {
+			float:left;
 		}
 		span{
 			@media screen and (max-width: 992px) {

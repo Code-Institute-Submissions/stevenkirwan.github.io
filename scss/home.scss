@@ -46,8 +46,8 @@
 
 .music{
 	@include margin(0px 0px 60px 0px);
-	video{
-		height:500px;
+	.video:hover{
+		cursor: pointer;
 	}
 }
 
@@ -76,6 +76,7 @@
 			@media all and (max-width: 600px) {
 				width:100%;
 				text-align:center;
+				@include margin(20px null 20px null);
 			}
 			.date{
 				font-size: em(32);

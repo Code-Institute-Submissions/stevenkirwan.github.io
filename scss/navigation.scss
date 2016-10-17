@@ -48,6 +48,8 @@ nav {
 @media all and (max-width: 600px) {
   nav {
     display: block;
+    text-align: center;
+    @include padding(null null 30px null);
   }
 
   .logo {
@@ -57,5 +59,11 @@ nav {
 
   .item {
     padding:10px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .item {
+    padding:5px;
   }
 }

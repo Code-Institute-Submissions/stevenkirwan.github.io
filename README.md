@@ -17,7 +17,7 @@ I used SASS for my CSS I find keeps a projects code nice and tidy and helps stop
 The website is a single page application using AngularJS as the framework. The site is split up into multiple view and uses the power of angular **routing** to display/hide a view based on the users selection. There is a single json file that pulls most of the content of the site which cuts down on the amount of repeated  HTML a lot of this is pulled into the site using a **http** request and displayed using **ng-repeat**. Other features of angular I used were **filter** on the gigs page which filters through data laid out in table format based on location. I used a **custom directive** for the header and footer of the site.
 
 #### Overview
-Finished site can be view [here]: https://stevenkirwan.github.io/#/
+Finished site can be view here: https://stevenkirwan.github.io
  The aim of this project was to build a website for a band using
  * semantic HTML5 markup
  * AngularJS as the framework

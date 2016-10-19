@@ -9,6 +9,7 @@
 		<div class="col-md-9 contact-form">
 			
 			<form name="contactForm" novalidate>
+				<div class="alert alert-danger" role="alert" ng-show="contactForm.$invalid">All fields are required</div>
 				<div class="row">
 					<div class="col-md-6">
 						<label for="name">Name</label>
@@ -29,7 +30,7 @@
 					<div class="col-md-6">
 						<label for="phone">Phone Number</label>
 						<input 
-						type="number" 
+						type="text" 
 						name="number"
 						ng-model="client.number"
 				        ng-minlength="10" 
@@ -94,6 +95,7 @@
 						<input type="submit" ng-disabled="contactForm.$invalid" value="Send it">
 					</div>
 				</div>
+				<div class="alert alert-success" role="alert" ng-show="contactForm.$valid">Form is ready to submit</div>
 			</form>
 		</div>
 		

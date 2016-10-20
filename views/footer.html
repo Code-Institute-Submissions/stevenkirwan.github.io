@@ -24,7 +24,22 @@
 				    <div class="error-message" ng-messages="newsletter.email.$error" ng-show="newsletter.email.$touched">
     					<p ng-message="email">Your email is required.</p>
 					</div>
-					<input type="submit">
+					<input type="submit" data-toggle="modal" data-target="#newsletterModal">
+					<div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+					        <div class="modal-content">
+						      <div class="modal-header">
+						        <h4 class="modal-title">Newsleter Not Active!</h4>
+						      </div>
+						      <div class="modal-body">
+						        <p>This functionality will only work in the production version of the site. </p>
+						      </div>
+						      <div class="modal-footer">
+						        <a class="btn btn-default" data-dismiss="modal">Close</a>
+						      </div>
+						    </div>
+					  </div>
+					</div>
 				</form>
 			</div>
 			<div class="col-md-4 instagram">

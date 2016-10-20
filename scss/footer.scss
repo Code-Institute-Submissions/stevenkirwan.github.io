@@ -38,6 +38,12 @@ footer{
 			}
 		}
 	}
+	.modal-dialog{
+		color:$black;
+		a:hover{
+			background:$black;
+		}
+	}
 
 	.footer-bottom{
 		background: $black;

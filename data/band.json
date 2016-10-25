@@ -82,28 +82,28 @@
 			"id":"1",
 			"name":"David Kennedy",
 			"instrument": "Guitar",
-			"bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, voluptates debitis, quia magni totam incidunt aspernatur suscipit laboriosam ea nostrum dolores tempora voluptas praesentium labore omnis dignissimos quod qui nisi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo debitis dicta perspiciatis, ut, accusamus architecto. Sequi ab assumenda, quisquam iure aut. Officiis rem recusandae quia commodi, sequi, nobis perspiciatis officia.",
+			"bio": "With over 20 years experience David is a master of his craft.",
 			"birthdate": "12/22/1986"
 		},
 		"2":{
 			"id":"2",
 			"name":"Aidan O' Halloran",
 			"instrument": "Drums",
-			"bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero totam reprehenderit enim assumenda. Dolorem, unde est laborum nihil sunt hic quo repellat in numquam accusamus aut molestiae blanditiis? Enim.",
+			"bio": "If you thought Bonham hit hard wait till you hear this guy!",
 			"birthdate": "12/22/1986"
 		},
 		"3":{
 			"id":"3",
 			"name":"Aidan Williams",
 			"instrument": "Bass",
-			"bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt soluta non voluptatem. Numquam et voluptatem aperiam animi, in exercitationem nam, provident mollitia consectetur, doloribus, deserunt quo? Porro incidunt tempore quae?",
+			"bio": "He's been know all over these shores for slappin' the bass!!",
 			"birthdate": "12/22/1986"
 		},
 		"4":{
 			"id":"4",
 			"name":"Luke Peters",
 			"instrument": "Vocals/Guitar",
-			"bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum distinctio numquam, modi maiores dolorem ex qui necessitatibus odio incidunt sint tempore hic, tempora molestias ipsam impedit beatae. Ducimus, voluptate.",
+			"bio": "Luke is the longest standing member of the band.",
 			"birthdate": "12/22/1986"
 		}
 	},

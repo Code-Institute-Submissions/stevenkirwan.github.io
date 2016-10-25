@@ -1,15 +1,25 @@
+/* mixin  library */
 @import 'bourbon/bourbon';
+/* Reset */
 @import 'reset';
 
+/* Main colors */
 @import 'colors';
+/* Fonts */
 @import 'font';
+/* Base styles */
 @import 'base';
 
+/* Header styles */
 @import 'header';
+/* Navigation styles */
 @import 'navigation';
+/* Footer styles */
 @import 'footer';
 
-@import 'pages';
+/* Homepage styles */
 @import 'home';
+/* Gig page styles */
 @import 'gigs';
+/* Contact page styles */
 @import 'contact';

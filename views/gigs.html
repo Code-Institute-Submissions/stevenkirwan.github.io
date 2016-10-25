@@ -1,8 +1,19 @@
+<!-- Delcare header -->
 <div inner-nav></div>
+
+<!-- Start container -->
 <div class="container inner">
+
+    <!-- Page title -->
 	<h2>{{ title }}</h2>
+    <!-- Page title -->
+
+    <!-- Filter by location - using Angular filter directive -->
 	Search By Location
 	<input type="text" ng-model="location">
+    <!-- /Filter by location -->
+	
+	<!-- ng-repeat showing up coming show data -->
 	<div ng-repeat="gig in filteredData = (siteContent.gigs | filter:location)">
 
 		<div class="gig-item">
@@ -21,5 +32,11 @@
 			</div>
 		</div>
 	</div>
+	<!-- /ng-repeat showing up coming show data -->
+	
+	<!-- Only show if no results found after filter -->
 	<div class="col-md-12 no-gigs" ng-show="filteredData.length==0">No upcoming gigs in your area <br/>Check back soon for updated gig info</p>
+
+
 </div>
+<!-- End container -->

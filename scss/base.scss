@@ -1,3 +1,7 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 body{
 	background:$light-grey;
 	background-image:url('../images/inner-bg-new.jpg');
@@ -130,4 +134,9 @@ strong{
 			color:$white;
 		}
 	}
+}
+
+.inner{
+	background:$white;
+	@include padding(40px 30px 40px 30px);
 }

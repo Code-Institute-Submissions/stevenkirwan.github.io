@@ -1,7 +1,10 @@
+<!-- Delcare header -->
 <div header></div>
 
+<!-- Start container -->
 <div class="container-fluid">
-
+	
+	<!-- Intro section -->
 	<section class="intro row">
 		<div class="col-md-12">
 			<h2>{{ siteContent.intro[0].title }}</h2>
@@ -9,7 +12,9 @@
 			<a ng-href="/#/band" class="btn">Read more</a>
 		</div>
 	</section>
-
+	<!-- /Intro section -->
+	
+	<!-- Band section -->
 	<section class="band row">
 		<div class="col-md-12"><h3>Band Members</h3></div>
 		<div class="col-md-3 col-sm-6" ng-repeat="member in siteContent.members">
@@ -21,7 +26,9 @@
 			</a>
 		</div>
 	</section>
+	<!-- /Band section -->
 
+	<!-- Shows section -->
 	<section>
 		<div class="row"><div class="col-md-12"><h3>Upcoming Shows</h3></div></div>
 		<div class="gigs">
@@ -38,7 +45,9 @@
 			</ul>	
 		</div>
 	</section>
-
+	<!-- /Shows section -->
+	
+	<!-- Music section -->
 	<section class="music">
 		<div class="row">
 			<div class="col-md-12"><h3>latest releases</h3></div>
@@ -57,7 +66,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- /Music section -->
 
+	<!-- Book section -->
 	<div class="row">
 		<section class="book text-center">
 			<div class="col-md-12">
@@ -67,5 +78,8 @@
 			</div>
 		</section>
 	</div>
+	<!-- Book section -->
+	
 </div>
+<!-- End container -->
 

@@ -1,61 +1,93 @@
+<!-- Delcare header -->
 <div inner-nav></div>
-<section class="container inner">
 
+<!-- Start container -->
+<section class="container inner">
+	
+	<!-- Page title -->
 	<div class="row">
 		<h2>{{ title }}</h2>
 	</div>
+	<!-- /Page title -->
+	
+	<!-- Start row -->
+	<div class="row-eq-height form-wrapper">
 
-	<div class="row-eq-height form-wrappe">
+		<!-- Conatct form -->
 		<div class="col-md-9 contact-form">
 			
+			<!-- Start form -->
 			<form name="contactForm" novalidate>
 				<div class="alert alert-danger" role="alert" ng-show="contactForm.$invalid">All fields are required</div>
+
+				<!-- Form first row -->
 				<div class="row">
+
+					<!-- Name field -->
 					<div class="col-md-6">
 						<label for="name">Name</label>
 						<input 
 						type="text"  
 						name="name" 
 				        ng-model="client.name" 
-				        ng-minlength="3" 
-				        ng-maxlength="20"
 						placeholder="Name" 
 				        required>
+
+				        <!-- Error messages -->
 					    <div class="error-message" ng-messages="contactForm.name.$error" ng-show="contactForm.name.$touched">
 	    					<p ng-message="required">Your name is required.</p>
 						</div>
+				        <!-- /Error messages -->
+
 					</div>
+					<!-- /Name field -->
+
+					<!-- Phone number field -->
 					<div class="col-md-6">
 						<label for="phone">Phone Number</label>
 						<input 
 						type="text" 
 						name="number"
 						ng-model="client.number"
-				        ng-minlength="10" 
-				        ng-maxlength="10"
 						placeholder="Phone Number"
 						required>
+
+				        <!-- Error messages -->
 						<div class="error-message" ng-messages="contactForm.number.$error" ng-show="contactForm.number.$touched">
 	    					<p ng-message="required">Your number is required.</p>
 						</div>
+				        <!-- /Error messages -->
+
 					</div>
+					<!-- Phone number field -->
+
 				</div>
+				<!-- /Form first row -->
+
+				<!-- Form second row -->
 				<div class="row">
+
+					<!-- Email field -->
 					<div class="col-md-6">
 						<label for="email">Email</label>
 						<input 
 						type="email" 
 						name="email" 
 						ng-model="client.email"
-	                	ng-minlength="5"
-	                	ng-maxlength="20"
 						placeholder="Email"
 						required ng-class="{'has-error': contactForm.email.$invalid}">
+
+				        <!-- Error messages -->
 						<div class="error-message" ng-messages="contactForm.email.$error" ng-show="contactForm.email.$touched">
 							<p ng-message="required">Your email is required.</p>
 	    					<p ng-message="email">Your email address is invalid</p>
 						</div>
+			        	<!-- /Error messages -->
+
 					</div>
+					<!-- /Email field -->
+					
+					<!-- Location field -->
 					<div class="col-md-6">
 						<label for="location">Location</label>
 						<input 
@@ -64,12 +96,23 @@
 						ng-model="client.location" 
 						placeholder="Location" 
 						required>
+
+				        <!-- Error messages -->
 						<div class="error-message" ng-messages="contactForm.location.$error" ng-show="contactForm.location.$touched">
 							<p ng-message="required">Your location is required.</p>
 						</div>
+				        <!-- /Error messages -->
+
 					</div>
+					<!-- /Location field -->
+
 				</div>
+				<!-- Form second row -->
+
+				<!-- Form third row -->
 				<div class="row">
+
+					<!-- Message field -->
 					<div class="col-md-12">
 						<label for="message">Message</label>
 						<textarea 
@@ -77,20 +120,38 @@
 						ng-model="client.message" 
 						placeholder="Message"
 						required></textarea>
+
+						<!-- Error messages -->
 						<div class="error-message" ng-messages="contactForm.message.$error" ng-show="contactForm.message.$touched">
 							<div ng-message="required">This field is required</div>
 						</div>
+						<!-- /Error messages -->
+
 					</div>
+					<!-- /Message field -->
+
 				</div>
+				<!-- /Form third row -->
+
+				<!-- Fourth row - submit -->
 				<div class="row">
 					<div class="col-md-2">
 						<input type="submit" ng-disabled="contactForm.$invalid" value="Send it">
 					</div>
 				</div>
+				<!-- /Fourth row - submit -->
+				
+				<!-- Sucess message -->
 				<div class="alert alert-success" role="alert" ng-show="contactForm.$valid">Form is ready to submit</div>
+				<!-- /Sucess message -->
+
 			</form>
+			<!-- End form -->
+
 		</div>
+		<!-- /Conatct form -->
 		
+		<!-- Conatct details -->
 		<div class="col-md-3 contact-details">
 			<aside class="contact-details">
 				<h4>Contact Info</h4>
@@ -110,5 +171,10 @@
 				</ul>
 			</aside>
 		</div>
+		<!-- /Conatct details -->
+
 	</div>
+	<!-- End row -->
+
 </section>
+<!-- End container -->

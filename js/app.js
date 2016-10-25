@@ -1,3 +1,4 @@
+// Declare app
 var bandApp = angular.module('bandApp', ['ngRoute', 'BandAppControllers', 'ngMessages']);
 
 // Routing

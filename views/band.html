@@ -1,16 +1,26 @@
+<!-- Delcare header -->
 <div inner-nav></div>
+
+<!-- Start container -->
 <section class="container inner">
+
+    <!-- Page title -->
 	<h2>{{ title }}</h2>
+	<!-- /Page title -->
+
+	<!-- Band intro -->
 	<div class="row about">
 		<div class="col-md-6">
-			<img src="images/band-shot-1.jpg" alt="">
+			<img src="images/band-shot-1.jpg" alt="Band Shot">
 		</div>
 		<div class="col-md-6">
 			<p>{{ siteContent.bio[0].para1}}</p>
 			<p>{{ siteContent.bio[0].para2}}</p>
 		</div>
 	</div>
+	<!-- /Band intro -->
 
+	<!-- Members section -->
 	<div class="band row">
 		<div class="col-md-12"><h3>Band Members</h3></div>
 		<div class="col-md-3" ng-repeat="member in siteContent.members">
@@ -22,11 +32,15 @@
 			</a>
 		</div>
 	</div>
+	<!-- /Members section -->
 
 </section>
+<!-- End container -->
 
+<!-- Start container -->
 <section class="container-fluid">
 
+	<!-- Start row -->
 	<div class="row">
 		<section class="book text-center">
 			<div class="col-md-12">
@@ -36,5 +50,7 @@
 			</div>
 		</section>
 	</div>
-	
+	<!-- End row -->
+
 </section>
+<!-- End container -->

@@ -1,14 +1,28 @@
+<!-- Delcare header -->
 <div inner-nav></div>
+
+<!-- Start container -->
 <div class="container inner">
+    
+    <!-- Page title -->
 	<div class="col-md-12">
 		<h2>{{ title }}</h2>
 	</div>
+    <!-- Page title -->
+    
+    <!-- Memeber Image -->
 	<div class="col-md-4">
     	<img src="images/{{ member.id }}.jpg" alt="{{ member.name }}">
     </div>
+    <!-- /Memeber Image -->
+
+    <!-- Memeber description -->
     <div class="col-md-8">
     	<p><strong>Instrument: </strong>{{ member.instrument }}</p>
     	<p><strong>Birthday: </strong>{{ member.birthdate | date }}</p>
 		<p>{{ member.bio }}</p>
     </div>
+    <!-- /Memeber description -->
+
 </div>
+<!-- End container -->

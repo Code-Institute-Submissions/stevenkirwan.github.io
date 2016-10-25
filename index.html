@@ -4,30 +4,42 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>AeSect are a modern influenced metal band based in Dublin, Ireland.</title>
-	<!--build:css css/styles.min.css-->
+	<!-- font awesome font library -->
 	<link rel="stylesheet" href="components/font-awesome/css/font-awesome.min.css">
+	<!-- Bootstrap framework styles -->
 	<link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Main custom styles -->
 	<link rel="stylesheet" href="css/styles.css">
-	<!--endbuild-->
 </head>
-<body>
-
+<body ng-cloak class="ng-cloak">
+	
 	<main>
+		<div class="se-pre-con"></div>
+		<!-- using auto scroll true so view loads at top of page -->
 		<div ng-view autoscroll="true"></div>
 	</main>
-
+	
+	<!-- Footer directive -->
 	<div footer></div>
-
-	<!--build:js js/main.min.js -->
+	
+	<!-- jQuery library -->
 	<script src="components/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap JS for modals, etc -->
 	<script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- Main angular JS -->
 	<script src="components/angular/angular.min.js"></script>
+	<!-- Angular route for page routing  -->
 	<script src="components/angular-route/angular-route.min.js"></script>
+	<!-- Used to display messages in form validation  -->
 	<script src="components/angular-messages/angular-messages.min.js"></script>
+	<!-- Custom JS file -->
 	<script src="js/app.js">></script>
+	<!-- Angular controllers -->
 	<script src="js/controllers.js">></script>
+	<!-- Custom directives footer, header, etc-->
 	<script src="js/directives.js">></script>
+	<!-- Custom services -->
 	<script src="js/services.js">></script>
-	<!-- endbuild -->	
+	
 </body>
 </html>

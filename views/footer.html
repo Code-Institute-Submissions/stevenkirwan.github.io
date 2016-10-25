@@ -1,32 +1,38 @@
 <footer>
+
+	<!-- Footer section top -->
 	<section class="footer-top">
+
+		<!-- Start container -->
 		<div class="container-fluid">
+
+			<!-- Upcoming gigs -->
 			<div class="col-md-3">
 				<h4>Upcoming Gigs</h4>
 				<ul class="arrow-list">
 					<li ng-repeat="gig in siteContent.gigs | limitTo:4"><a href="#">{{ gig.date | date:'mediumDate' }}</a>	<span>{{ gig.venue }} {{ gig.address }}</span></li>
 				</ul>
 			</div>
+			<!-- /Upcoming gigs -->
+
+			<!-- About section -->
 			<div class="col-md-3">
 				<h4>About</h4>
 				<p>AeSect are a modern influenced metal band based in Dublin, Ireland. Formed in the Summer of 2011, it has been the band's aim to make an impression right from the beginning. After regular gigging, the band garnered a name for itself amongst the live metal scene in Dublin</p>
 			</div>
+			<!-- /About section -->
+
+			<!-- Newsletter sign up -->
 			<div class="col-md-2">
 				<h4>Newsletter</h4>
+				<!-- Form  -->
 				<form name="newsletter" novalidate>
-					<input 
-					type="email" 
-					name="email" 
-					ng-model="signup.email"
-					required 
-					ng-class="{'has-error': newsletter.email.$invalid}"
-					placeholder="Sign up to newsletter">
-				    <div class="error-message" ng-messages="newsletter.email.$error" ng-show="newsletter.email.$touched">
-    					<p ng-message="email">Your email is required.</p>
-					</div>
+					<input type="email" name="email" placeholder="Sign up to newsletter">
 					<input type="submit" data-toggle="modal" data-target="#newsletterModal">
+
+					<!-- Start modal - only enabled on development  site remove for live-->
 					<div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-					  <div class="modal-dialog" role="document">
+					  	<div class="modal-dialog" role="document">
 					        <div class="modal-content">
 						      <div class="modal-header">
 						        <h4 class="modal-title">Newsleter Not Active!</h4>
@@ -38,23 +44,44 @@
 						        <a class="btn btn-default" data-dismiss="modal">Close</a>
 						      </div>
 						    </div>
-					  </div>
+					  	</div>
 					</div>
+					<!-- /End modal-->
+
 				</form>
+				<!-- /form -->
 			</div>
+			<!-- Newsletter sign up -->
+			
+			<!-- Instragram section -->
 			<div class="col-md-4 instagram">
 				<h4>Instagram</h4>
 				<ul>
+				    <!-- ng-repeat used to mock instagram feed -->
 					<li ng-repeat="images in siteContent.instagram"><a href="#"><img src="{{ images }}" alt=""></a></li>
 				</ul>
 			</div>
+			<!-- /Instragram section -->
+
 		</div>
+		<!-- End container -->
+
 	</section>
+	<!-- /Footer section top -->
+	
+	<!-- Footer section bottom -->
 	<section class="footer-bottom">
+
+		<!-- Start container -->
 		<div class="container-fluid">
+
+			<!-- Copyright -->
 			<div class="col-md-6">
 				<strong>&copy;Copyright Band 2016</strong>
 			</div>
+			<!-- /Copyright -->
+
+			<!-- Social media icons -->
 			<div class="col-md-6">
 				<ul class="social">
 					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -63,6 +90,12 @@
 					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
+			<!-- /Social media icons -->
+
 		</div>
+		<!-- End container -->
+
 	</section>
+	<!-- /Footer section bottom -->
+
 </footer>
